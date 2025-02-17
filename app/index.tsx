@@ -1,9 +1,14 @@
 import { Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import LoginScreen from "./Screen/LoginScreen";
 import "../global.css"
 
 export default function Index() {
   return (
-    <View className="flex items-center justify-center bg-white">Je suis du text</View>
+    <View className="flex bg-white">
+      <StatusBar style="auto" />
+      <LoginScreen/> 
+    </View>
   );
 }
 
